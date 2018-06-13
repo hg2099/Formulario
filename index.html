@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Formulario</title>
+</head>
+<body>
+    <h2>Infromación sobre el producto</h2>
+    <form action="/email.php">
+        <fieldset>
+            <legend>Datos básicos</legend>
+            <!-- Nombre -->
+            <div> 
+                <label for="nombre">Nombre</label>
+                <br/>
+                <input type="text" name="nombre" id="nombre"/>
+            </div>
+            <br/>
+            <!-- Descripción -->
+            <div>
+                <label for="descripcion">Descripción</label>
+                <br/>
+                <input type="text" name="descripción" id="descripción"/>
+            </div>
+            <br/>
+            <!-- Foto -->
+            <div>
+                <label for="foto">Foto</label>
+                <input type="file" name="foto" id="foto">
+            </div>
+            <br/>
+            <!-- Contador de visitas -->
+            <div>
+                <input type="checkbox" name="contador de visitas" id="contador de visitas" value="checkbox"/>
+                <label for="contador de visitas">Añadir contador de visitas</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Datos económicos</legend>
+            <!-- Precio e Impuestos -->
+            <div>
+                <!--Precio-->
+                <label for="precio">Precio</label>
+                <input type="text" name="precio" id="precio">
+                <label for="&#8364;">&#8364;</label>
+                <!--Impuestos-->
+                <label for="impuestos">Impuestos</label>
+                <select name="impuestos" id="impuestos">
+                    <option value="4%">4%</option>
+                    <option value="7%">7%</option>
+                    <option value="16%">16%</option>
+                    <option value="25%">25%</option>
+                </select>
+            </div>
+            <!-- Promoción -->
+            <div>
+                <br/>
+                <label for="promocion">Promoción</label>
+                <br/>
+                <!--Ninguno-->
+                <label for="ninguno">Ninguno</label>
+                <input type="radio" name="promo" id="radio">
+                <br/>
+                <!--Transporte-->
+                <label for="trasporte"></label>Transporte Gratuito</label>
+                <input type="radio" name="promo" id="radio">
+                <br/>
+                <!--descuento-->
+                <label for="descuento">Descuento 5%</label>
+                <input type="radio" name="promo" id="radio">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
